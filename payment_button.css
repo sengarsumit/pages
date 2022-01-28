@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+body{
+    background-color: #e6e6e6;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+	margin-bottom:10px ;
+}
+.brand-title {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+.navbar-links {
+    height: 100%;
+}
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar-links li {
+    list-style: none;
+}
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+	font-size: 1.5rem;
+}
+.navbar-links li:hover{
+	text-decoration: underline;
+}
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 896px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links ul li {
+        text-align: center;
+    }
+    .navbar-links ul li a {
+        padding: 0.5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.container{
+    display: flex;
+    margin: 0px auto;
+    width:90%;
+    height: 520px;
+}
+.left{
+    background-color: #bbbbbb;
+}
+.left img{
+    margin-top: 8rem;
+    width: 500px;;
+    height: 310px;
+}
+.right{
+    padding-left: 4rem;
+    padding-top: 2rem;
+    text-align: justify;
+    background-color: rgb(223 223 223);
+}
+.right button{
+    float: right;
+    margin: 55px 69px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    margin-right: 130px;
+    /* border-style: none; */
+    background-color: #ffda00;
+    cursor: pointer;
+}
+.right button a{
+    color: black;
+    text-decoration: none;
+}
+.right button a:hover{
+    color: rgb(0, 0, 138);
+}
+.right button:hover{
+    background-color: rgb(255, 166, 0);
+}
+.right span{
+    font-size: 2rem;
+    display: inline-block;
+    margin: 16px 50px;
+}
+.right h1{
+    font-size: 2rem;
+    margin: 16px 15px;
+}
+.right div {
+    margin: 40px 135px 15px 135px;
+    font-size: 1.5rem;
+    margin-left: 15px;
+}
+.right p{
+    font-size:1.2rem ;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+
+.container2{
+	margin: 0px auto;
+    width: 90%;
+	height: 500px;
+	background-color: #d4d4d5;
+    margin-bottom: 20px;
+
+}
+.btn{
+    display:flex;
+    flex-direction: row;
+    border-bottom: 2px solid grey;
+    padding: 10px 29px;
+    
+    font-size: 2rem;
+    justify-content: space-between;
+}
+.btn button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 208, 0, 0.952);
+}
+.btn button:hover{
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+}
+.container3{
+   height: 100px;
+}
+
+label{
+    display:inline-block;
+     font-weight: 700 !important;
+    font-size: 1rem;
+    width: 50px;
+}
+input{
+    width:200px;
+    padding: 8px 5px 8px 5px;
+	border: none;
+    font-size: 1rem;
+    margin-right: 116px;
+}
+.container3 button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 208, 0, 0.952);
+}
+.container3 button:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: black;
+}
+.container4{
+    background-color: #bbbbbb;
+}
+
+#nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.5rem;
+	cursor: pointer;
+    padding: 10px;
+}
+#nav ul li:hover{
+    text-decoration: underline;
+}

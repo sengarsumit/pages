@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment_button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-title">B-PAY</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">My Account</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <img src="B-PAY-Button.png" alt="Error Loading Image">
+        </div>
+        <div class="right">
+            <span id="name">&mdash; &nbsp; B-Pay</span>
+            <h1>Payment Buttons</h1>
+            <div>Create an effective, payment button easily using B-Pay features and start collecting payment on your websites</div>
+            <p>&rarr;No coding Required</p>
+            <p>&rarr;Multiple Payment Modes </p>
+            <p>&rarr;Customized Buttons</p>
+            <button><a href="">Explore More</a></button>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="container2">
+         <div class="btn">
+            <div> Payment Buttons</div>
+            <button>+ Create Payment Button</button>
+        </div>
+        <br>
+        <div class="container3">
+                    <label for="t1" id="t1">Title</label>
+                    <input type="text" id="t1" >
+                    <label for="t2" id="t2">Status</label>
+                    <input type="text" id="t2" placeholder="All">
+                    <label for="t3" id="t3">Count</label>
+                    <input type="text" id="t3">
+                <button>Search</button>
+         </div>
+    <br>
+    <div class="container4">
+        <nav id="nav">
+            <ul>
+                <li>Title</li>
+                <li>Total Sales</li>
+                <li>Items Name</li>
+                <li>Units Sold</li>
+                <li>Created At</li>
+                <li>Status</li>
+                <li>Actions</li>
+            </ul>
+        </nav>
+    </div> 
+
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+
+    </script>
+</body>
+</html>
